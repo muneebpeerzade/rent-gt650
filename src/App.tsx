@@ -1,38 +1,24 @@
-import { Button } from "@/components/ui/button";
-import WhatsappIcon from "@/components/WhatsappIcon";
-import MrClean from "../public/mr_clean.png";
+import Hero from "@/components/Hero";
+
 function App() {
   return (
-    <div className="min-h-svh container mx-auto  flex flex-col justify-center gap-8 items-start ">
-      <div className="space-y-5 px-8 md:px-0">
-        <div className="space-y-3">
-          <h2 className="font-bold text-2xl tracking-tight ">
-            THE ROYAL ENFIELD
-            <br />
-            CONTINENTAL GT 650 TWIN
-          </h2>
-          <p className="text-muted-foreground text-sm">
-            Shiny chrome, 648cc parallel twin, 47 HP at 7,150 RPM built to ride,
-            built to thrill, built to turn heads.
-          </p>
-        </div>
-        <div className="space-y-3">
-          <Button className="rounded-none w-full" size={"lg"}>
-            <WhatsappIcon className="stroke-green-500" />
-            Reserve Your GT650 Today
-          </Button>
-          <p className="text-xs text-center text-muted-foreground">
-            🎉speacial discounts for college send-offs & wedding
-          </p>
-        </div>
-      </div>
-      <img src={MrClean} className="" />
-      <footer className="text-center text-xs self-center absolute bottom-5">
-        <p className="text-muted-foreground">
-          © 2025 GT650 Rentals. Terms & Conditions apply
-        </p>
-      </footer>
-    </div>
+<div className="min-h-screen w-full bg-white relative text-gray-800">
+  {/* Circuit Board - Light Pattern */}
+  <div
+    className="absolute inset-0 z-0 pointer-events-none"
+    style={{
+      backgroundImage: `
+        repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px),
+        repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px),
+        radial-gradient(circle at 20px 20px, rgba(55, 65, 81, 0.12) 2px, transparent 2px),
+        radial-gradient(circle at 40px 40px, rgba(55, 65, 81, 0.12) 2px, transparent 2px)
+      `,
+      backgroundSize: '40px 40px, 40px 40px, 40px 40px, 40px 40px',
+    }}
+  />
+  {/* Your Content/Components */}
+  <Hero/>
+</div>
   );
 }
 
