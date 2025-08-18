@@ -2,9 +2,9 @@ import MrClean from "/mr_clean.png";
 import CTA from "@/components/CTA";
 const Hero = () => {
   return (
-    <div className="min-h-svh container mx-auto z-10  flex flex-col justify-center gap-8 items-start md:items-center">
+    <div className="min-h-svh container mx-auto z-10  flex flex-col justify-center gap-8 items-center ">
       <div className="space-y-5 px-8 md:px-0">
-        <div className="space-y-3">
+        <div className="space-y-3 text-center">
           <h2 className="font-bold text-2xl md:text-3xl tracking-tight ">
             THE ROYAL ENFIELD <br className="" />
             CONTINENTAL GT 650 TWIN
