@@ -25,7 +25,7 @@ This website is designed to attract attention, provide quick details about the b
 
 ```bash
 # Clone the repository
-git clone https://github.com/muneebpeerzade/gt650-rentals.git  
+git clone https://github.com/muneebpeerzade/gt650-rentals.git
 
 # Navigate into the project folder
 cd gt650-rentals  
